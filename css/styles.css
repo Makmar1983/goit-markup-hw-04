@@ -133,10 +133,12 @@ display: flex;
     margin-left: auto;
 }
 .linkpadding{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-
+    
+fill: #757575;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -147,6 +149,7 @@ display: flex;
 .linkpadding:hover,
 .alink.linkpadding:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .logo {
    
@@ -180,7 +183,13 @@ margin-bottom: 30px;
 }
 /* Hero */
 .hero{
-    background-color: #2F303A;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../Images/Img.png);
     text-align: center;
      padding-top: 200px;
      padding-bottom: 200px;
@@ -355,13 +364,16 @@ background-image:url('../Images/antenna.svg');
 .item.icon-clock::before {
     background-image: url('../Images/antenna.svg');
 } */
+
+/* .link-align{
+    align-items: center
+} */
 .nav-svg {
-    width: 16px;
-    height: 12px;
+   
     margin-right: 10px;
-position: absolute;
-top: 50%;
 }
+
+
 .icon-svg{
   padding: 25px 100px;
   margin-bottom: 25px;
@@ -372,9 +384,7 @@ background-color: #F5F4FA;
 .command .itemcomand+.itemcomand{
     margin-left: 30px;
 }
-.itemcomand{
-    text-align: center;
-}
+
 .dcommand{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -466,4 +476,48 @@ color: #FFFFFF;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+/* section 4 */
+.work{
+    margin-bottom: 16px;
+}
+.button-svg{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: inherit;
+    /* background-size: contain;
+    background-position: center; */
+
+    fill: #AFB1B8;
+    
+}
+.button-svg:hover{
+    background-color: var(--accent-color);
+   fill: #FFFFFF;
+}
+.bg-section-command{
+    background-color: #F5F4FA;
+}
+.itemcomand {
+    text-align: center;
+    
+    background-color: var(--primary-white-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}.command-svg{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    
+}
+.command-li{
+  margin-right: 10px;
+}
+.command-li:nth-child(4n) {
+    margin-right: 0;
 }
