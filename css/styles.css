@@ -334,9 +334,40 @@ font-family: inherit;
     background-color: #e84b4b;
 } */
  .command{
-    display: flex;
+    display: flex; 
+}
+/* .item::before{
+    display: block;
+    margin-bottom: 30px;
     
-    
+    height: 120px;
+    background-color: #F5F4FA;
+    content: '';
+   
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+/* } */
+/* .item.icon-antena::before{
+background-image:url('../Images/antenna.svg');
+}
+.item.icon-clock::before {
+    background-image: url('../Images/antenna.svg');
+} */
+.nav-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+position: absolute;
+top: 50%;
+}
+.icon-svg{
+  padding: 25px 100px;
+  margin-bottom: 25px;
+    width: 270px;
+    height: 120px;
+background-color: #F5F4FA;    
 }
 .command .itemcomand+.itemcomand{
     margin-left: 30px;
